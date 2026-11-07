@@ -1,0 +1,14 @@
+# Backtester: low P/E + momentum
+# Install with:  pip install -r requirements.txt
+# Python 3.10 or newer. Developed and tested on Python 3.13 with the versions noted below.
+
+numpy>=1.26          # tested with 2.5.3
+pandas>=2.0          # tested with 3.0.5 (used by the app only)
+streamlit>=1.50      # tested with 1.66.1 (the app uses width="stretch")
+
+# Real data (only needed for: python stage2_run.py --live). Yahoo prices come from yfinance;
+# EDGAR and the S&P 500 list use Python's built-in urllib, so nothing else to install.
+yfinance>=0.2.40
+
+# Tests (only needed for: python -m pytest tests)
+pytest>=8.0          # tested with 9.1.1
